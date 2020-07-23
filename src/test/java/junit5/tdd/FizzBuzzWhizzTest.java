@@ -31,4 +31,17 @@ public class FizzBuzzWhizzTest {
         //then
         assertEquals("Fizz", result);
     }
+
+    @Test
+    void should_return_Buzz_when_count_of_given_5() {
+        //given
+        int number = 5;
+        FizzBuzzWhizz fizzBuzzWhizz = new FizzBuzzWhizz();
+
+        //when
+        String result = fizzBuzzWhizz.countOf(number);
+
+        //then
+        assertEquals("Buzz", result);
+    }
 }
